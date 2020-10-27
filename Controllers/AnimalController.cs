@@ -25,5 +25,10 @@ namespace SearchAnimal.Controllers
             return Ok(new Animal{Age=1,Name="Crazy",Type="Monkey"});
         }
 
+        [HttpGet("get/{id}")]
+        public ActionResult<Animal> GetById([FromQuery]int id){
+            return Ok(new Animal{Age=id, Name="Default",Type="Default"});
+        }
+
     }
 }
