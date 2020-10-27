@@ -3,10 +3,18 @@ pipeline{
     agent any
     stages{
         stage('First Stage'){
-            echo 'Firt Stage Running'
+            steps {
+                step{
+                    echo 'First Stage Running'
+                }
+            }
         }
         stage('Second Stage'){
-            echo 'Second Stage Running'
+            steps {
+                step{
+                    echo 'Second Stage Running'
+                }
+            }
         }
     }
 }
