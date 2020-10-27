@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 
 namespace SearchAnimal.Controllers
 {
+    // Example Commit
     [ApiController]
     [Route("[controller]")]
     public class AnimalController : ControllerBase
