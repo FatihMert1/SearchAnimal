@@ -1,19 +1,9 @@
-pipeline{
-
+pipeline {
     agent any
-    stages{
-        stage('First Stage'){
+    stages {
+        stage('build') {
             steps {
-                step{
-                    echo 'First Stage Running'
-                }
-            }
-        }
-        stage('Second Stage'){
-            steps {
-                step{
-                    echo 'Second Stage Running'
-                }
+                sh 'bash echo hello world'
             }
         }
     }
